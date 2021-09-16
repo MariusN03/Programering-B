@@ -1,0 +1,18 @@
+body{
+    background-image: url(./assets/ruedi-haberli-khP3-6veHUo-unsplash.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-position: center center;
+    display: grid;
+    place-items:center;
+}
+h1 {
+    color: black;
+    background-color: lightgrey;
+    font-family: cursive;
+    font-size: 32px;
+    padding: 2rem;
+    border: 5px solid black;   
+    border-radius: 30px; 
+}

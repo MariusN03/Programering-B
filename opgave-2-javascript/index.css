@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Allison&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Allison';
+}
+
+body {
+    display:grid;
+    grid-template-rows: 1fr 5fr 2rem;
+    height: 100vh;
+}
+
+header {
+    background-color: blue;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    background-color: red;
+    transition: .3s all ease-in-out;
+}
+
+footer{
+    background-color: magenta;
+}
+
+#button {
+    background-color: white;
+    height: 15vh;
+    width: 15vh;
+    border: solid black 1rem;
+    border-radius: 12%;
+    display: grid;
+    place-items: center;
+    transition: all .2s;
+}
+
+#button:hover {
+    background-color: darkorange;
+    height: 20vh;
+    width: 20vh;
+    font-size: 20px;
+    cursor: pointer;
+}

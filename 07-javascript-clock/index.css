@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Indie Flower';
+}
+
+body {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    height: 100vh;
+}
+
+header {
+    background-color: grey;
+    display: grid;
+    place-items: center;
+}
+
+main {
+    background-color: darkgrey;
+    display: grid;
+    place-items: center;
+}
+
+footer {
+    background: lightgrey;
+    display: grid;
+    place-items: center;
+}
+
+#ur {
+    display: grid;
+    grid-auto-flow: column;
+    font-size: 25vh;
+}
+
+#ure {
+    display: grid;
+    grid-auto-flow: column;
+    font-size: 25vh;
+}
+
+#button {
+    font-size: 15vh;  
+    background-size: cover; 
+    background-repeat: no-repeat;
+}
+#button:hover {
+    font-size: 16vh;
+    cursor: pointer;
+    
+}
+

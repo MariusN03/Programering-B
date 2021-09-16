@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+html {
+    background: linear-gradient(to right, rgb(206, 114, 198) 25%, rgb(59, 169, 189) 100%);
+    text-align: center;
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+}
+
+.clock {
+    transition: .5s all ease-in-out;
+    width: 30rem;
+    height: 30rem;
+    border: 20px solid white;
+    margin: 50px auto;
+    border-radius: 100%;
+    position: relative;
+    padding: 2rem;
+    box-shadow: 
+        0 0 0 4px rgba(255, 255, 255, 0.349),
+        inset 0 0 0 3px #efefef,
+        inset 0 0 100px lightblue,
+        0 0 10px rgba(0, 0, 0, 0.2); 
+}
+
+.clock:hover {
+    box-shadow: 
+        0 0 0 4px rgba(255, 255, 255, 0.349),
+        inset 0 0 0 3px #efefef,
+        inset 0 0 100px rgb(230, 173, 227),
+        0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.clock-face {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform: translateY(-3px);
+}
+
+.hand {
+    width: 50%;
+    height: 6px;
+    background: black;
+    position: absolute;
+    top: 50%;
+    transform-origin: 100%;
+    transform: rotate(90deg);
+    transition: 0.3s all;
+    transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+
+}
+
+.hand-hour {
+    background: black;
+    width: 25%;
+    left: 25%;
+}
+
+.hand-minute {
+    background: grey;
+    width: 37%;
+    left: 13%;
+}
+
+.hand-seconds {
+    background: darkgrey;
+    width: 55%;
+    left: -5%;
+}
+
+.supreme {
+    display: grid;
+    place-items: center;
+    padding: 1px;
+    margin: 0;
+    background: rgba(255, 0, 0, 0.507);
+    color: rgba(255, 255, 255, 0.699);
+    width: 6vw;
+    height: 4vh;
+    position: absolute;
+    top: 55%;
+    left: 47.25%;
+    transition: .5s all ease-in-out;
+}
+
+
+
+
+
+#bruh {
+    position: fixed;
+    
+}

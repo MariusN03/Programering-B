@@ -1,0 +1,61 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+/*
+#ure {
+    display: grid;
+    grid-auto-flow: column;
+    font-size: 25vh;
+    background-color: aquamarine;
+}
+*/
+header {
+    background-color: cadetblue;
+}
+
+main {
+    background-color: aqua;
+}
+
+footer {
+    background-color: cornflowerblue;
+}
+
+#sekunder {
+    background-color: crimson;
+    border: solid black 10px;
+    height: 100%;
+    width: 0;
+    display: grid;
+    place-items: center;
+    font-size: 68px;
+    
+}
+
+#minutter {
+    background-color: orange;
+    border: solid black 10px;
+    height: 100%;
+    width: 0;
+    display: grid;
+    place-items: center;
+    font-size: 68px
+}
+
+#timer {
+    background-color: yellow;
+    border: solid black 10px;
+    height: 100%;
+    width: 0;
+    display: grid;
+    place-items: center;
+    font-size: 68px;
+}

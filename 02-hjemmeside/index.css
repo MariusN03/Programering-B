@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+body{
+    margin: 0;
+    background-color: pink;
+    height: 25vw;
+    width: 100vw;
+    overflow: hidden;
+    display: grid;
+    place-items: center;
+}
+h2{
+    border: 8px solid lightblue;
+    background-color: royalblue;
+    margin-bottom: 50px;
+    padding: 2rem;
+    font-family: 'Pacifico';
+    font-size: 32px;
+    width: 30vw;
+    text-align: center;
+    
+}
+ul{
+    border: 8px solid lightblue;
+    background-color: royalblue;
+    font-family: fantasy;
+    font-size: 17px;
+    padding: 2rem;
+    
+    
+    
+    
+}
+.popo{
+
+    color:white;
+    padding:2rem;
+    
+   
+}
+.link{
+
+    color: white;
+}
