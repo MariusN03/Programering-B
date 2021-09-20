@@ -3,3 +3,52 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(146, 255, 255);
+}
+
+header {
+    height: 10vh;
+    display: grid;
+    place-items: center;
+}
+
+input {
+    width: 80vw;
+    font-size: 2rem;
+    border-radius: 1rem;
+    outline: none;
+    padding: 1rem;
+    background-color: rgb(255, 55, 55);
+    border: 3px solid rgb(255, 243, 73);;
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.card {
+    display: grid;
+    place-items: center;
+    background-color: rgb(255, 55, 55); 
+    height: 10rem;
+    color: rgb(255, 243, 73);
+    font-size: 32px;
+    border-radius: 100px;
+    box-shadow: 10px 10px 50px 2px black;
+    text-shadow: 4px 4px 5px #000;
+    transition: all ease-in-out 0.3s;
+}
+
+.card:hover {
+    transform:scale(1.03);
+}
+
+
