@@ -16,9 +16,14 @@ let ucl = ['PSG', 'Man City', 'Barcalona', 'Liverpool', 'Real Madrid', 'Atletico
 
 
 function uclPush(){ 
-    ucl.map(addCard(pusher.value));
-    //ucl.push(pusher.value);
+    //ucl.map(addCard(pusher.value));
+    ucl.push(pusher.value);
+    main.innerHTML = ''
+    pusher.value = ''
+    ucl.map(n => addCard(n))
 }
+
+
 
 
 
