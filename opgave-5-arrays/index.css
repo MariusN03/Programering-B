@@ -6,6 +6,7 @@
 
 body {
     background-color: darkseagreen;
+    overflow-x:hidden;
 }
 
 header {
