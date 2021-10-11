@@ -1,0 +1,33 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+main {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2rem;
+    gap: .1rem;
+    overflow: hidden;
+}
+
+.card {
+    height: 6rem;
+    width: 70%;
+    background: radial-gradient(blue, black);
+    border-bottom-left-radius:35px;
+    border-top-right-radius: 35px;
+}
+
+@keyframes anim{
+    from{
+        transform: rotateZ(180deg);
+    }
+
+    to{
+        transform: rotateZ(0deg);
+    }
+}

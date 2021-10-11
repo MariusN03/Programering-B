@@ -52,3 +52,12 @@ main {
 }
 
 
+
+@keyframes anim{
+    from{
+        transform: translateY(180px);
+    }
+    to{
+        transform: translateY();
+    }
+}

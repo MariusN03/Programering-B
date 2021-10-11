@@ -7,6 +7,8 @@ newCard.classList.add('card')
 let newH = document.createElement('h1')
 newH.innerHTML = name
 newCard.append(newH)
+newCard.style.animation = 'anim'
+newCard.style.animationDuration = 1 + 's'
 main.append(newCard)
 }
 
