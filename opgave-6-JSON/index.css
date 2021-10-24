@@ -48,8 +48,8 @@ main {
     display : grid;
     place-items: center;
     padding: .8rem;
-    width: 25vh;
-    height: 25vh;
+    width: 12vw;
+    height: 12vw;
     box-shadow: 5px 5px 20px 2px;
     border: solid black .3rem;
     background-image: url('./assets/stone.jpg');
