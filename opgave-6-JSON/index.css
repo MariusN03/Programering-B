@@ -1,4 +1,7 @@
-@import url('http://fonts.cdnfonts.com/css/minecraft-4');
+@font-face {
+    font-family: 'Minecraft';
+    src: url(./assets/MinecraftRegular-Bmg3.otf);
+}
 
 * {
     margin: 0;
