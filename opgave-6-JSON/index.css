@@ -29,18 +29,19 @@ header {
 
 header img {
     width: 50vw;
+    height: auto;
 }
 
 main {
     display: grid;
     background-image:url('./assets/background.png');
     place-items: center;
-    gap: 3rem;
-    padding: 3rem;
+    gap: 3vw;
+    padding: 3vw;
     grid-template-columns: repeat(3, 1fr);
     width: 100vw;
     height: 100%;
-    border: whitesmoke 1rem solid;
+    border: whitesmoke 1vw solid;
     border-radius: 25px;
 }
 
