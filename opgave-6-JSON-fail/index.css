@@ -1,0 +1,42 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: black;
+    overflow-x: hidden;
+}
+
+header {
+    display: grid;
+    place-items: center;
+    border: whitesmoke solid 1rem;
+    border-radius: 50px;
+    padding: 1rem;
+    background-color: lightblue;
+}
+
+main {
+    background-color: pink;
+    display: grid;
+    place-items: center;
+    gap: 3rem;
+    padding: 3rem;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100vw;
+    height: 100%;
+    border: whitesmoke 1rem solid;
+    border-radius: 100px;
+}
+
+.card {
+    display: grid;
+    place-items: left;
+    padding: 1rem;
+    width: 30vw;
+    box-shadow: 5px 5px 20px 2px;
+    border: solid black .3rem;
+}

@@ -1,13 +1,18 @@
+@import url('//db.onlinewebfonts.com/c/6ab539c6fc2b21ff0b149b3d06d7f97c?family=Minecraft');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+    font-family: 'Minecraft';
 }
 
 body {
-    background-color: black;
+    background:black;
+    background-size: cover;
+    background-repeat: no-repeat;
     overflow-x: hidden;
+    
 }
 
 header {
@@ -16,27 +21,44 @@ header {
     border: whitesmoke solid 1rem;
     border-radius: 50px;
     padding: 1rem;
-    background-color: lightblue;
+    background-image:url('./assets/header.jpg');
 }
 
 main {
-    background-color: pink;
     display: grid;
+    background-image:url('./assets/background.png');
     place-items: center;
     gap: 3rem;
     padding: 3rem;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     width: 100vw;
     height: 100%;
     border: whitesmoke 1rem solid;
-    border-radius: 100px;
+    border-radius: 80px;
 }
 
 .card {
-    display: grid;
-    place-items: left;
+    display : grid;
+    place-items: center;
     padding: 1rem;
-    width: 30vw;
+    width: 25vh;
+    height: 25vh;
     box-shadow: 5px 5px 20px 2px;
     border: solid black .3rem;
+    background-image: url('./assets/stone.jpg');
+    background-size: 100%;
+    text-shadow: 1px 1px 1px white, -1px 1px 1px white, 1px -1px 1px white, -1px -1px 1px white;
+}
+
+.card h2 {
+    padding-bottom: 0;
+    font-size: 16px;
+}
+
+.card h3 {
+    padding-top: 0;
+}
+
+.card:hover {
+    transform: scale(105%);
 }

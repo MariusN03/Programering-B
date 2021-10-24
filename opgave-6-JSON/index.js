@@ -1,63 +1,73 @@
-let mk = [
+let blocks = [
     {
-        'name': 'Scorpion',
-        'ability': ['Hell-spear', ' Martial arts'],
-        'color': 'yellow'
+        'name': 'stone',
+        'id': 1,
+        'img': 'stone.jpg'
     },
     {
-        'name': 'Sub-Zero',
-        'ability': ['Lin-Kuei', ' Martial arts'],
-        'color': 'blue'
+        'name': 'dirt',
+        'id': 3,
+        'img': 'dirt.jpg'
     },
     {
-        'name': 'Jade',
-        'ability': ['Razor-rang', ' Martial arts'],
-        'color': 'green'
+        'name': 'sand',
+        'id': 12,
+        'img': 'sand.png'
     },
     {
-        'name': 'Kano',
-        'ability': ['Kano-Ball', ' Drinking'],
-        'color': 'grey'
+        'name': 'gravel',
+        'id': 13,
+        'img': 'gravel.png'
     },
     {
-        'name': 'Jax Briggs',
-        'ability': ['Metal arms', ' Soldier'],
-        'color': 'darkgreen'
+        'name': 'diamond ore',
+        'id': 56,
+        'img': 'diamondore.png'
     },
     {
-        'name': 'Johnny Cage',
-        'ability': ['Acting', ' Confidence'],
-        'color': 'gold'
+        'name': 'oak planks',
+        'id': 5,
+        'img': 'oakplanks.png'
     },
     {
-        'name': 'Sonya Blade',
-        'ability': ['Leading', ' Soldier'],
-        'color': 'darkblue'
+        'name': 'end stone',
+        'id': 121,
+        'img': 'endstone.png'
     },
     {
-        'name': 'Baraka',
-        'ability': ['Claws', ' Fighting'],
-        'color': 'bisque'
+        'name': 'netherrack',
+        'id': 87,
+        'img': 'netherrack.png'
     },
     {
-        'name': 'Liu-Kang',
-        'ability': ['Kung-fu', ' Fire'],
-        'color': 'red'
+        'name': 'obsidian',
+        'id': 49,
+        'img': 'obsidian.png'
     },
     {
-        'name': 'Kitana',
-        'ability': ['Royalty', ' Martial arts'],
-        'color': 'royalblue'
+        'name': 'oak log',
+        'id': 17,
+        'img': 'oaklog.png'
+    },
+    {
+        'name': 'cobblestone',
+        'id': 4,
+        'img': 'cobblestone.png'
+    },
+    {
+        'name': 'coal ore',
+        'id': 16,
+        'img': 'coal.png'
     }
 ]
 
 
-mk.map( c => {
+blocks.map( c => {
     let nc = document.createElement('div')
     nc.classList.add('card')
-    nc.style.backgroundColor = c.color
+    nc.style.backgroundImage = "url('./assets/" + c.img + "')"
     nc.style.borderRadius = 10 + 'px'
-    nc.innerHTML = '<h1>' + c.name + '</h1>' + '<br>' + '<h2>' + 'Egenskaber: ' + c.ability + '</h2>'
+    nc.innerHTML = '<h2>' + c.name + '</h2>' + '<br>' + '<h3>' + 'Id: ' + c.id + '</h3>'
 
     document.querySelector('main').append(nc)
   } )
