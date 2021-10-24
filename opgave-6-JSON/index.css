@@ -1,4 +1,4 @@
-@import url('//db.onlinewebfonts.com/c/6ab539c6fc2b21ff0b149b3d06d7f97c?family=Minecraft');
+@import url('http://fonts.cdnfonts.com/css/minecraft-4');
 
 * {
     margin: 0;
@@ -19,9 +19,13 @@ header {
     display: grid;
     place-items: center;
     border: whitesmoke solid 1rem;
-    border-radius: 50px;
+    border-radius: 25px;
     padding: 1rem;
     background-image:url('./assets/header.jpg');
+}
+
+header img {
+    width: 50vw;
 }
 
 main {
@@ -34,13 +38,13 @@ main {
     width: 100vw;
     height: 100%;
     border: whitesmoke 1rem solid;
-    border-radius: 80px;
+    border-radius: 25px;
 }
 
 .card {
     display : grid;
     place-items: center;
-    padding: 1rem;
+    padding: .8rem;
     width: 25vh;
     height: 25vh;
     box-shadow: 5px 5px 20px 2px;
@@ -52,11 +56,12 @@ main {
 
 .card h2 {
     padding-bottom: 0;
-    font-size: 16px;
+    font-size: 1.5vw;
 }
 
 .card h3 {
     padding-top: 0;
+    font-size: 1.2vw;
 }
 
 .card:hover {
