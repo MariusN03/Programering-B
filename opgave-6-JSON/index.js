@@ -22,7 +22,8 @@ let blocks = [
     {
         'name': 'diamond ore',
         'id': 56,
-        'img': 'diamondore.png'
+        'img': 'diamondore.png',
+        'color': 'lightblue'
     },
     {
         'name': 'oak planks',

@@ -7,7 +7,6 @@
 main {
     height: 100vh;
     display: grid;
-    place-items: center;
     grid-template-columns: repeat(4, 1fr);
     padding: 2rem;
     gap: .1rem;
