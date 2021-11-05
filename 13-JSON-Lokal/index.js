@@ -34,7 +34,7 @@ const newCard = (bird) => {
 }
 
 input.addEventListener('input', () => {
-    let results = data.filter(bird => bird.family.toLowerCase().includes(input.value.toLowerCase()))
+    let results = data.filter(bird => bird.family.toLowerCase().includes(input.value.toLowerCase()) || bird.members.toLowerCase().includes(input.value.toLowerCase()))
     main.innerHTML = ''
     results.map(bird => newCard(bird))
     
