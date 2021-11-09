@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: darkblue;
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+
+header {
+    border: black solid .3rem;
+    padding: 1rem;
+    padding-bottom: 0;
+    font-size: 1rem;
+    display: grid;
+    place-items: center;
+    height: 20vh;
+    width: 100vw;
+    background-color: cornflowerblue;
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+    box-shadow: 0 0 12px 6px white;
+}
+
+header h1 {
+    border-bottom: black solid .2rem;
+    padding: .5rem;
+    padding-bottom: 0;
+    text-shadow: 0 0 12px white;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    height: 60vh;
+    width: 80vw;
+}
+
+#fetch {
+    background: none;
+    color: inherit;
+    padding: .5rem;
+    border: .1rem solid black;
+    cursor: pointer;
+    outline: none;
+    transform: scale(150%);
+    margin-bottom: 3rem;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    text-shadow: 0 0 12px white;
+    box-shadow: 0 0 12px 6px white;
+}
+
+#typer {
+    background: none;
+    color: inherit;
+    padding: .5rem;
+    border: .1rem solid black;
+    cursor: pointer;
+    outline: none;
+    transform: scale(150%);
+    margin-bottom: 3rem;
+    background-color: cornflowerblue;
+    border-radius: 10px;
+    text-shadow: 0 0 12px white;
+    box-shadow: 0 0 12px 6px white;
+}
+
+#box{
+    display: grid;
+    place-items: center;
+    border: black double 1rem;
+    padding: 1rem;
+    font-size: 1rem;
+    background-color: cornflowerblue;
+    text-shadow: 0 0 12px white;
+    box-shadow: 0 0 12px 6px white;
+}
+
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    height: 20vh;
+    width: 40vw;
+}
