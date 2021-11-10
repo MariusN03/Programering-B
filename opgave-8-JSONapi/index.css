@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: blue;
+    background-color: rgb(187, 99, 99);
     display: grid;
     place-items: center;
     width: 100vw;
@@ -22,7 +22,7 @@ header {
     place-items: center;
     height: 20vh;
     width: 100vw;
-    background-color: cornflowerblue;
+    background-color: rgb(199, 118, 64);
     border-bottom-left-radius: 30px;
     border-bottom-right-radius: 30px;
     box-shadow: 0 0 12px 6px white;
@@ -50,7 +50,7 @@ main {
     outline: none;
     transform: scale(150%);
     margin-bottom: -2.25rem;
-    background-color: cornflowerblue;
+    background-color: rgb(199, 118, 64);
     border-radius: 10px;
     box-shadow: 0 0 12px 6px white;
 }
@@ -71,7 +71,7 @@ main {
     outline: none;
     transform: scale(150%);
     margin-bottom: 2rem;
-    background-color: cornflowerblue;
+    background-color: rgb(199, 118, 64);
     border-radius: 10px;
     box-shadow: 0 0 12px 6px white;
 }
@@ -91,7 +91,7 @@ main {
     outline: none;
     transform: scale(150%);
     margin-bottom: 2rem;
-    background-color: cornflowerblue;
+    background-color: rgb(199, 118, 64);
     border-radius: 10px;
     box-shadow: 0 0 12px 6px white;
 }
@@ -102,7 +102,7 @@ main {
     border: black double 1rem;
     padding: 1rem;
     font-size: 1rem;
-    background-color: cornflowerblue;
+    background-color: rgb(199, 118, 64);
     box-shadow: 0 0 12px 6px white;
 }
 
