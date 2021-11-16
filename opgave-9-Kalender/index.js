@@ -22,7 +22,7 @@ const datPokemon = () => {
 for (var i = 0; i < all.length; i++) {
    if( all[i].style.filter == 'brightness(0%)'){
   all[i].style.filter = 'brightness(100%)';
-  setTimeout(bruhuh,1000)}
+   }
   else{
       all[i].style.filter = 'brightness(0%)';
   }
@@ -35,8 +35,13 @@ const bruhuh = () => {
     audio.play()
 }
 
-document.querySelector('#who').addEventListener('click', datPokemon)
+document.querySelector('#who').addEventListener('click', dada => {
+    setTimeout(datPokemon, 4000)
+    audio2.play()
+
+})
 var audio = new Audio("./assets/movie_1.mp3")
+var audio2 = new Audio("./assets/pika.mp3")
 
 window.addEventListener('keydown', event => {
     if(event.keyCode === 13 || event.keyCode === 66){
