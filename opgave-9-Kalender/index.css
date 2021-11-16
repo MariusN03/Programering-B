@@ -23,6 +23,7 @@ body {
     background-repeat: no-repeat;
     width: 10vw;
     height: 10vw;
+    transition: ease-in-out 1s all;
 }
 
 img {
