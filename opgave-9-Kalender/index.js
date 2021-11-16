@@ -21,24 +21,29 @@
 const datPokemon = () => {
 for (var i = 0; i < all.length; i++) {
    if( all[i].style.filter == 'brightness(0%)'){
-  all[i].style.filter = 'brightness(100%)';}
+  all[i].style.filter = 'brightness(100%)';
+  setTimeout(bruhuh,800)}
   else{
       all[i].style.filter = 'brightness(0%)';
   }
 }
 }
-    
+  
+const bruhuh = () => {
+    audio.play()
+}
+
 document.querySelector('#who').addEventListener('click', datPokemon)
 var audio = new Audio("./assets/bruh-sound-effect-1.mp3")
 
 window.addEventListener('keydown', event => {
     if(event.keyCode === 13 || event.keyCode === 66){
-        audio.play()
+        bruhuh()
         console.log('mongoTV')
         
     }
 })
 
 document.getElementById('b').addEventListener('click', event => {
-        audio.play()
+        bruhuh()
 })
