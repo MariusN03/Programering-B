@@ -1,27 +1,3 @@
-let api_key = "u4QsbdJ55v6W3irNyXGgT0Hg3O6W7jSK"
-let img = document.querySelector('img')
-let bruh
-
-/*fetch("" + value + ".png")
-    .then(response => response.json()
-    .then(json => {
-        console.log(json)
-        json.map( image => createPokeImage(image))
-        for(let i = 0; i < 12; i++) {
-            let bruh = document.createElement('div')
-            bruh.classList.add('boxing')
-            bruh.innerHTML = "<img src=" + json.data[i].images.fixed_height.url + "></br>"
-            document.querySelector('body').append(bruh)
-        }
-        }))
-        
-        function createPokeImage(pokeID, containerDiv){
-            let pokeImage = document.createElement('img')
-            pokeImage.src =`https://pokeres.bastionbot.org/images/pokemon/${pokeID}.png`
-            containerDiv.append(pokeImage);
-          }*/
-
-
     for(let i = 1 ; i<25 ; i++){
         let pokebob = document.createElement('div')
         pokebob.classList.add('boxing')
