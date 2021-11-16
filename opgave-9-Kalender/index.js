@@ -28,4 +28,17 @@ for (var i = 0; i < all.length; i++) {
 }
 }
     
-document.querySelector('#wdp').addEventListener('click', datPokemon)
+document.querySelector('#who').addEventListener('click', datPokemon)
+var audio = new Audio("./assets/bruh-sound-effect-1.mp3")
+
+window.addEventListener('keydown', event => {
+    if(event.keyCode === 13 || event.keyCode === 66){
+        audio.play()
+        console.log('mongoTV')
+        
+    }
+})
+
+document.getElementById('b').addEventListener('click', event => {
+        audio.play()
+})
