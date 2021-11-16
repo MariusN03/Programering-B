@@ -35,9 +35,18 @@ const bruhuh = () => {
     audio.play()
 }
 
+let dims = 1
+
 document.querySelector('#who').addEventListener('click', dada => {
-    setTimeout(datPokemon, 4000)
+    if(dims == 1){
+    setTimeout(datPokemon, 3500)
     audio2.play()
+    dims = 0
+}
+else{
+    alert('Nice try!')
+    location.reload()
+}
 
 })
 var audio = new Audio("./assets/movie_1.mp3")
