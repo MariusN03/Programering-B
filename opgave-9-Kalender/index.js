@@ -22,7 +22,7 @@ const datPokemon = () => {
 for (var i = 0; i < all.length; i++) {
    if( all[i].style.filter == 'brightness(0%)'){
   all[i].style.filter = 'brightness(100%)';
-  setTimeout(bruhuh,800)}
+  setTimeout(bruhuh,1000)}
   else{
       all[i].style.filter = 'brightness(0%)';
   }
@@ -30,11 +30,13 @@ for (var i = 0; i < all.length; i++) {
 }
   
 const bruhuh = () => {
+    audio.pause
+    audio.currentTime = 0;
     audio.play()
 }
 
 document.querySelector('#who').addEventListener('click', datPokemon)
-var audio = new Audio("./assets/bruh-sound-effect-1.mp3")
+var audio = new Audio("./assets/movie_1.mp3")
 
 window.addEventListener('keydown', event => {
     if(event.keyCode === 13 || event.keyCode === 66){
