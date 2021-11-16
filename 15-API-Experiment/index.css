@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;    
+}
+
+body {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    background-color: cornflowerblue;
+    border: dotted 1rem gold;
+    margin:1rem;
+    margin-right: 0;
+}
+
+.boxing {
+    border: double black 1rem;
+    box-shadow: 0 0 12px 6px black;
+}
+
+img {
+    width: 50%;
+}
+
+::-webkit-scrollbar {
+    visibility: hidden;
+}
