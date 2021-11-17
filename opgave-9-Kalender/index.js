@@ -63,3 +63,20 @@ window.addEventListener('keydown', event => {
 document.getElementById('b').addEventListener('click', event => {
         bruhuh()
 })
+
+
+const pokemontest = () => {
+fetch('https://pokeapi.co/api/v2/pokemon/1')
+    .then(response => response.json())
+    .then(json => {
+        let testbox = document.createElement('div')
+    testbox.classList.add('testbox')
+    testbox.innerHTML = "<img src='" + json.sprites.front_default + "'>"
+    console.log('hej')
+    document.querySelector('body').append(testbox)
+
+    })}
+    
+    pokemontest()
+    
+    console.log(data)

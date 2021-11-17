@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    background-color: crimson;
+    margin:1rem;
+    margin-right: 0;
+}
+
+.box {
+    border: double black 1rem;
+    box-shadow: 0 0 12px 6px black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 15vw;
+    height: 15vw;
+    transition: ease-in-out 1s all;
+    display: grid;
+    place-items: center;
+    filter: brightness(100%);
+}
+
+.box h1 {
+    position: absolute;
+}
+
+.box img {
+    transform: scale(200%);
+}
+
+::-webkit-scrollbar {
+    visibility: hidden;
+}
