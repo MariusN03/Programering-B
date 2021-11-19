@@ -30,10 +30,15 @@ body {
 
 .box h1 {
     position: absolute;
+    visibility: hidden;
 }
 
 .box img {
     transform: scale(200%);
+}
+
+.box img:hover {
+    transform: scale(220%);
 }
 
 ::-webkit-scrollbar {
