@@ -1,3 +1,8 @@
+@font-face {
+    font-family: Pokemon;
+    src: url('./assets/Pokemon\ Solid.ttf');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,6 +10,19 @@
 }
 
 body {
+    background-color: pink;
+}
+
+header {
+    display: grid;
+    place-items: center;
+    height: 30vh;
+    font-size: 64px;
+    font-family: 'Pokemon';
+    text-shadow:  0 0 10px royalblue;
+}
+
+main {
     display: grid;
     place-items: center;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
@@ -13,6 +31,7 @@ body {
     background-color: crimson;
     margin:1rem;
     margin-right: 0;
+    border: 1rem black solid;
 }
 
 .box {
@@ -34,11 +53,13 @@ body {
 }
 
 .box img {
-    transform: scale(200%);
+    /*transform: scale(200%);*/
+    width: 13vw;
 }
 
 .box img:hover {
-    transform: scale(220%);
+    transform: scale(110%);
+    
 }
 
 ::-webkit-scrollbar {
