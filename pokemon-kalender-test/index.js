@@ -2,7 +2,7 @@ let p = 1
 let data
 const day = new Date()
 let all = document.getElementsByClassName('box');
-const currentDay = day.getDate() 
+const currentDay = day.getDate() -8
 
 console.log(currentDay + '. November')
 

@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    background-image: url(./assets/WH-XmasTree.webp);
+    background-size: cover;
+}
+
+.door {
+    background-color: crimson;
+    color: darkgreen;
+    font-size: 64px;
+    display: grid;
+    place-items: center;
+    border: darkgreen solid .5rem;
+    background-size: cover;
+}
+
+#bøv {
+    width: 400px;
+    height: 400px;
+    -webkit-mask-image: -webkit-gradient(linear, left top, right top, 
+    from(rgba(0,0,0,1)), to(rgba(0,0,0,0.2)));
+}
+
+.door:hover{
+    transform: scale(105%);
+}

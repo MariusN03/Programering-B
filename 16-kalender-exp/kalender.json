@@ -1,0 +1,21 @@
+{
+    "days":[
+        {
+            "date":1,
+            "width": "400px",
+            "height": "400px",
+            "content": "image",
+            "url": "./assets/jul.jpg",
+            "animation": "slide"
+        },
+        {
+            "date":2,
+            "width": "400px",
+            "height": "400px",
+            "content": "youtube",
+            "embed": "<iframe width=\"100%\" height=\"100%\" src=\"https://www.youtube.com/embed/USjkrVNmNps\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture\" allowfullscreen></iframe>",
+            "animation": "slide"
+        }
+        
+    ]
+}
