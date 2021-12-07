@@ -1,22 +1,65 @@
-let p = 1
 let data
 const day = new Date()
 let all = document.getElementsByClassName('box');
-const currentDay = day.getDate() -8
+let currentDay = day.getDate()
+
 
 console.log(currentDay + '. November')
 
-let FetchOrder = [ , , , , , , , , , , , , , , , , , , , , , , , , ]
-console.log(FetchOrder.length)
     
-let number
-if(currentDay == 24){
-    number = currentDay + 469
-}
-else{
-    number = currentDay + 386
-}
+let number = currentDay + 386
+
+const audioBruh = () => {
+    console.log('sure fødder')
+    let audio = new Audio('./assets/movie_1.mp3')
+        audio.play()
+    
+}     
+
+
+const ifStatements = (num) => {
+    console.log(num.id)
+    let liveDate = 0
+    if(num.id == 493){
+        liveDate = 410
+    }
+    else{
+        liveDate = num.id
+    }
+    if(num.id - 386 > currentDay){
+    document.getElementById('bruh' + num.id).addEventListener('click', audioBruh)}
+        if((liveDate) - 386 <= currentDay){
+            console.log('shit works')
+            document.getElementById(liveDate).innerHTML = ''
+            document.getElementById('bruh' + num.id).style.backgroundColor = 'yellow'
+            document.getElementById('bruh' + num.id).style.filter = 'brightness(100%)'
         
+        }
+        else{
+        let displayDay = num.id - 386
+        document.getElementById('bruh' + num.id).innerHTML = ''
+        document.getElementById('bruh' + num.id).style.backgroundColor = 'cornflowerblue'
+        if(displayDay == 107){
+            displayDay = 24
+        }
+        document.getElementById('bruh' + num.id).innerHTML = "<b>" + displayDay + "</b>"
+        document.getElementById('bruh' + num.id).style.filter = 'brightness(100%)'
+        document.getElementById('bruh' + num.id).style.fontSize = '40px'
+        }
+        
+        
+        if((liveDate) - 386 == currentDay){
+            document.getElementById('bruh' + num.id).style.backgroundColor = 'green'
+            document.getElementById('fis' + liveDate).style.filter = 'brightness(0%)'
+        
+        }
+        /*if(document.getElementById(json.id).innerHTML == 493){
+            document.getElementById('bruh' + json.id).style.backgroundColor = 'cornflowerblue'
+            document.getElementById('bruh' + json.id).style.filter = 'brightness(50%)'
+        
+        }*/
+        
+        }
 
 const newL = (g) => {
         let pokebob = document.createElement('div')
@@ -25,96 +68,68 @@ const newL = (g) => {
         pokebob.id = 'bruh' + g.id 
         console.log(pokebob.id)
         if(g.id == 493){
-            pokebob.innerHTML = "<img id='" + 'fis' + g.id + "' src='" + g.sprites.front_default + "'> <h1 id='" + g.id + "'>" + arceus + "</h1>"
+            pokebob.innerHTML = "<img id='" + 'fis' + arceus + "' src='" + g.sprites.front_default + "'> <h1 id='" + arceus + "'>" + arceus + "</h1>"
         }
         else{
+            let inner = g.id - 386
             pokebob.innerHTML = "<img id='" + 'fis' + g.id + "' src='" + g.sprites.front_default + "'> <h1 id='" + g.id + "'>" + g.id + "</h1>"
         }
     
     document.querySelector('main').append(pokebob)
     console.log(g)
+    ifStatements(g)
 }
 
-const Pokemonner = () => {
-fetch('https://pokeapi.co/api/v2/pokemon/' + p)
-    .then(response => response.json())
-    .then(json => {
-        let an = json.id - 386
-        if(json.id == 493){
-        FetchOrder[24] = 493
+let doors = []
+
+const Pokemonner = async (id) => {
+    let res = await fetch('https://pokeapi.co/api/v2/pokemon/' + id)
+    let json = await res.json()
+    doors.push(json)
+}
+
+const init = async () => {
+    for(let i = 387;i<411;i++){
+        if(i == 410){
+            i=493
         }
-        else {
-            FetchOrder[an] = json.id
-        }
-        FetchOrder.sort()
-        
-        newL(json)
-        
+        await Pokemonner(i)   
+    }    
+}
 
-            
-                /*for (var i = day.getDate(); i < all.length; i++){
-                all[i].style.filter = 'brightness(0%)'
-        }*/
-
-
-
-        if(document.getElementById(json.id).innerHTML - 386 <= currentDay){
-    
-            document.getElementById('bruh' + json.id).style.backgroundColor = 'yellow'
-            document.getElementById('bruh' + json.id).style.filter = 'brightness(100%)'
-        
-    }
-    else{
-        let john = json.id - 386
-        document.getElementById('bruh' + json.id).innerHTML = ''
-        document.getElementById('bruh' + json.id).style.backgroundColor = 'cornflowerblue'
-        if(john == 107){
-            john = 24
-        }
-        document.getElementById('bruh' + json.id).innerHTML = "<b>" + john + "</b>"
-        document.getElementById('bruh' + json.id).style.filter = 'brightness(100%)'
-        document.getElementById('bruh' + json.id).style.fontSize = '40px'
-    }
-        
-
-        if(document.getElementById(json.id).innerHTML - 386 == currentDay){
-            document.getElementById('bruh' + json.id).style.backgroundColor = 'green'
-            document.getElementById('fis' + json.id).style.filter = 'brightness(0%)'
-
-        }
-        /*if(document.getElementById(json.id).innerHTML == 493){
-            document.getElementById('bruh' + json.id).style.backgroundColor = 'cornflowerblue'
-            document.getElementById('bruh' + json.id).style.filter = 'brightness(50%)'
-
-        }*/
-        if(document.getElementById(json.id).innerHTML - 469 == currentDay){
-            document.getElementById('bruh' + json.id).style.filter = 'brightness(100%)'
-            document.getElementById('bruh' + json.id).style.backgroundColor = 'green'
-
-        }
-    }
-        
-    )}
-
-
-
-for(let i = 387;i<411;i++){
-    if(i == 410){
-        i=493
-    }
-    p = i
-    
-    Pokemonner()
-    
+const test = ()=> {
+    console.log('test')
 }
 
 
 
-    for (var i = 0; i < all.length; i++) {
-        
-        all[i].style.filter = 'brightness(0%)';
-        
-    }
+
+const run = async () => {
+    console.log('init')
+    await init()
+    console.log('init done')
+    let index = 0
+    let t = setInterval(()=>{
+        newL(doors[index])
+        index++
+        if(index>23) {
+            clearInterval(t)
+            console.log('dine fødder')
+        }
+    }, 1)
+    
+} 
+
+
+run()
+
+
+
+for (var i = 0; i < all.length; i++) {
+    
+    all[i].style.filter = 'brightness(0%)';
+    
+}
     
 const datPokemon = () => {
 for (var i = 0; i < all.length; i++) {
@@ -134,6 +149,7 @@ for (var i = 0; i < all.length; i++) {
 
 
 
+
 window.addEventListener('keydown', event => {
     if(event.keyCode === 13 || event.keyCode === 66){
         
@@ -142,5 +158,8 @@ window.addEventListener('keydown', event => {
         console.log('hejsa')
     }
 })
-FetchOrder.sort()
-console.log(FetchOrder)
+
+
+
+
+
