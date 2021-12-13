@@ -1,0 +1,277 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+@font-face {font-family: Press-Start; src: url(./assets/fonts/press-start.ttf);}
+@font-face {font-family: Pokemon DP; src: url(./assets/fonts/Pokemon\ DP/pokemon-dp-pro.ttf);}
+@font-face {font-family: Pokemon GB; src: url(./assets/fonts/GB.ttf);}
+@font-face {font-family: NintendoDS; src: url(./assets/fonts/NintendoDS.ttf);}
+@font-face {font-family: NintendoSwitch; src: url(./assets/fonts/NintendoSwitch.ttf);}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "NintendoSwitch";
+}
+
+body{
+    background: #000000;
+    transition: .2s all ease-in-out;
+    overflow: hidden;
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    color: white;
+    font-size: 4rem;
+    text-align: center;
+    z-index: 0;
+    grid-template-rows: 1fr;
+}
+
+a{
+    color: black;
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    opacity: 0%;
+    transition: .3s all ease-in-out;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+#img-wrapper{
+    display: grid;
+    place-items: center;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    z-index: -1;
+}
+
+
+#press-start{
+    transition: all .2s ease-in-out;
+    font-family: Press-Start;
+    font-size: 3rem;
+    color: white;
+    animation: flicker 1s ease-in infinite;
+    user-select: none;
+    grid-column-start: 1;
+    grid-row-start: 1;
+}
+
+#theme-select-parent{
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    z-index: -1;
+    display: grid;
+    place-items: center;
+    user-select: none;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    padding: 10rem;
+    padding-bottom: 15rem;
+    gap: 5rem;
+}
+
+#theme-select-text{
+    opacity: 0;
+    z-index: -1;
+    font-size: 3.5rem;
+    font-family: Press-Start;
+    user-select: none;
+}
+
+#theme-select-wrapper{
+    display: grid;
+    grid-auto-flow: column;
+    place-items: center;
+    gap: 10rem;
+}
+
+#theme-select1{
+    opacity: 0;
+    transition: .2s all ease-in-out;
+    background: blue;
+    color: black;
+    border-radius: 50%;
+    border: 3px solid white;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    font-family: Press-Start;
+    cursor: pointer;
+    user-select: none;
+    height: 20rem;
+    width: 20rem;
+}
+
+#theme-select2{
+    opacity: 0;
+    transition: .2s all ease-in-out;
+    background: rgb(255, 134, 199);
+    color: black;
+    border-radius: 50%;
+    border: 3px solid white;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    font-size: 2rem;
+    font-family: Press-Start;
+    cursor: pointer;
+    user-select: none;
+    height: 20rem;
+    width: 20rem;
+}
+
+#text-box-parent{
+    transition: .1s all ease-in;
+    display: grid;
+    width: 55%;
+    height: 10rem;
+    place-items: center;
+    background: linear-gradient(#5d6a6e, #434c51);
+    transform: scale(0%);
+    border: 6px solid #36383a;
+    border-radius: 2rem;
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin-top: 35%;
+}
+
+#text-box{
+    background: linear-gradient(#bcbfbe, #9c9d9d);
+    height: 100%;
+    width: 93%;
+    margin-right: 2%;
+    border: 4px solid #7d7f81;
+    padding-top: 1%;
+    padding-left: 1.5%;
+    text-align: left;
+}
+
+#text-box-text{
+    color: black;
+    font-weight: bolder;
+    font-size: 2.5rem;
+    text-shadow: 1px 1px 1px black;
+    user-select: none;
+}
+
+#enter-arrow{
+    opacity: 0%;
+    position: absolute;
+    right: 1.8%;
+    bottom: 1.8%;
+    outline: 2px 2px black;
+    animation: hoverUpDown 1s ease-in-out infinite;
+}
+
+#enter-arrow svg{
+    transform: scale(290%);
+    filter: drop-shadow( 1px 1px 1px black);
+}
+
+@media screen and (max-width: 1660px){
+    #text-box-text{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width: 1345px){
+    #text-box-text{
+        font-size: 1.5rem;
+    }
+    #theme-select1{
+        font-size: 1.5rem;
+        height: 15rem;
+        width: 15rem;
+    }
+    #theme-select2{
+        font-size: 1.5rem;
+        height: 15rem;
+        width: 15rem;
+    }
+    #theme-select-text{
+        font-size: 2.5rem;
+    }
+}
+
+@keyframes hoverUpDown{
+    0%{
+        transform: translate(0);
+    }
+    30%{
+        transform: translateY(15px);
+    }
+    100%{
+        transform: translate(0);
+    }
+}
+
+@keyframes flicker{
+    0%{
+        opacity: 100%;
+    }
+    50%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes vanish{
+    0%{
+        opacity: 100%;
+        color: chartreuse;
+    }
+    100%{
+        opacity: 0%;
+        color: chartreuse;
+    }
+}
+
+@keyframes hoverIn{
+    0%{
+        transform: scale(0%);
+    }
+    100%{
+        transform: scale(100%);
+    }
+}
+
+@keyframes hoverOut{
+    0%{
+        transform: scale(100%);
+    }
+    100%{
+        transform: scale(0%);
+    }
+}
+
+@keyframes fadeIn{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
+}
+
+@keyframes popIn{
+    0%{
+        opacity: 0%;
+        transform: scale(0%);
+    }
+    70%{
+        transform: scale(110%);
+    }
+    100%{
+        opacity: 100%;
+        transform: scale(100%);
+    }
+}

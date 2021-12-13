@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokékalender</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="icon" href="./assets/img/icon.png">
+</head>
+<body>
+    <div id="img-wrapper">
+        <img id="dialga" src="./assets/img/dialga.jpg">
+        <img id="palkia" src="./assets/img/palkia.jpg">
+    </div>
+    <div id="theme-select-parent">
+        <h1 id="theme-select-text">Choose a theme</h1>
+        <div id="theme-select-wrapper">
+            <a href="index2.html?bgcolor=cornflowerblue"><div id="theme-select1" onmouseover="blueIn()" onmouseout="blueOut()">DIALGA</div></a>
+            <a href="index2.html?bgcolor=pink"><div id="theme-select2" onmouseover="redIn()" onmouseout="redOut()">PALKIA</div></a>
+        </div>
+    </div>
+    <h1 id="press-start">Press Start</h1>
+    <div id="text-box-parent">
+        <div id="text-box">
+            <p id="text-box-text"></p>
+        </div>
+        <span id="enter-arrow">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-caret-down-fill" viewBox="0 0 16 16">
+                <path d="M7.247 11.14 2.451 5.658C1.885 5.013 2.345 4 3.204 4h9.592a1 1 0 0 1 .753 1.659l-4.796 5.48a1 1 0 0 1-1.506 0z"/>
+              </svg>
+        </span>
+        <!-- <img id="enter-arrow" src="./assets/down-arrow-black-triangular-variant-symbol-pngrepo-com.png"/> -->
+    </div>
+    <script src="index.js"></script>
+   
+
+    
+</body>
+</html>

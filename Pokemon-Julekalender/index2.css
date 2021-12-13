@@ -1,0 +1,67 @@
+@font-face {
+    font-family: Pokemon;
+    src: url('./assets/Pokemon\ Solid.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: pink;
+}
+
+header {
+    display: grid;
+    place-items: center;
+    height: 30vh;
+    font-size: 90px;
+    font-family: 'Pokemon';
+    text-shadow:  10px 10px 10px white, -10px 10px 10px white, -10px -10px 10px white, 10px -10px 10px white;
+}
+
+main {
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 1rem;
+    padding: 2rem;
+    background-image: url("./assets/backergrounder.jpg");
+    background-size: cover;
+    margin:1rem;
+    margin-right: 0;
+    border: 1rem black solid;
+}
+
+.box {
+    border: solid black .5rem;
+    box-shadow: 0 0 12px 6px black;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 15vw;
+    height: 15vw;
+    transition: ease-in-out 1s all;
+    display: grid;
+    place-items: center;
+    filter: brightness(100%);
+    
+}
+
+.box h1 {
+    position: absolute;
+    top: 60%;
+    font-size: 64px;
+}
+
+.box img {
+    /*transform: scale(200%);*/
+    width: 13vw;
+}
+
+
+
+::-webkit-scrollbar {
+    visibility: hidden;
+}
