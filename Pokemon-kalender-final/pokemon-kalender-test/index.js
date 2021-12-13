@@ -3,7 +3,6 @@ const day = new Date()
 let all = document.getElementsByClassName('box');
 let currentDay = day.getDate()
 
-
 console.log(currentDay + '. November')
 
     

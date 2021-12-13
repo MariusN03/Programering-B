@@ -1,0 +1,1 @@
+let BGcolor = 'black'
