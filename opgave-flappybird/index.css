@@ -1,0 +1,36 @@
+* { 
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow: hidden;
+    background-color: cornflowerblue;
+    display: grid;
+    place-items: center;
+}
+
+#info {
+    color: white;
+    position: fixed;
+    right: 3rem;
+    bottom: 3rem;
+}
+
+#box{
+    display: grid;
+    position: fixed;
+    grid-template-rows: 1fr 1fr;
+    place-items: center;
+}
+
+#game {
+    color: red;
+    font-size: 5rem;
+}
+
+#refresh{
+    color: red;
+    font-size: 2rem;
+}

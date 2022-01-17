@@ -3,29 +3,3 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
-    width: 100vw;
-    height: 100vh;
-    overflow: hidden;
-}
-
-canvas{
-    position: fixed;
-    top: 0;
-}
-
-#info{
-    color: darkslateblue;
-    z-index: 5;
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
-}
-#info1{
-    color: darkslateblue;
-    z-index: 5;
-    position: fixed;
-    top: 2rem;
-    right: 2rem;
-}
