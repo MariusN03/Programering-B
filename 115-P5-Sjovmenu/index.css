@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap%27');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik';
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
+
+header {
+    height: 10vh;
+    background: pink;
+    display: grid;
+    place-items: center;
+    color: cornflowerblue;
+}
+
+button {
+    padding:1rem;
+}
+
+.student {
+    height: 0;
+    width: 40vh;
+    background-color: cornflowerblue;
+    border: .5rem black solid;
+    transition: 0.5s ease-in-out;
+    background-size: contain;
+}
+
+.show {
+    height: 40vh;
+    visibility: visible;
+}
+
+#hej {
+    visibility: hidden;
+}
+
+main{
+    position: relative;
+    height: 90vh;
+    display: grid;
+    place-items: center;
+}
+
+h2 {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+canvas {
+    position: absolute;
+    bottom: 0;
+
+}
