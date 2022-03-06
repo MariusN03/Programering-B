@@ -1,0 +1,150 @@
+*{
+    /* box-sizing: border-box; */
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font: 100% / 1.5 Raleway, sans-serif;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(circle, rgba(0,0,0,1) 71%, rgba(56,56,56,1) 85%, rgba(107,107,107,1) 100%);
+    
+    
+}
+
+#background {
+    height: 100vh;
+    width: 100vw;
+    background-image: url("./assets/moonBG2.gif");
+    background-size: 50vw;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+header {
+    height: 20vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+header h1 {
+    font-weight: 300;
+    font-size: 75px;
+    animation: lights 5s 750ms linear infinite;
+}
+
+main {
+    height: 85vh;
+    width: 70vw;
+    /* border: solid white 1rem; */
+    position: fixed;
+    top: 15vh;
+    left: 15vw;
+    z-index: 2;
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+    "temp . dust"
+    "gravity . o2"
+    ". rays ."
+    ;
+}
+#temp{grid-area: temp;}
+#dust{grid-area: dust;}
+#gravity{grid-area: gravity;}
+#o2{grid-area: o2;}
+#rays{grid-area: rays;}
+
+.problems {
+    width: 12vw;
+    height: 12vw;
+    /* border: red solid .5rem; */
+    font-size: large;
+    color: white;
+    display: grid;
+    place-items: center;
+    grid-template-rows: 1fr 3fr;
+    z-index: 2;
+}
+
+.problems img {
+    height: 7vw;
+    
+}
+
+.problems:hover {
+    /* 
+    background-color: blue;
+    animation: animate 3s linear infinite; */
+    
+    border-radius: 80px;
+    
+    box-shadow: white 0px 0px 60px -12px inset, white 0px 0px 36px -18px inset, white 0px 0px 70px 4px;
+}
+
+@keyframes lights {
+    0% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        -1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+    30% { 
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        -0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    40% { 
+      color: hsl(230, 100%, 95%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 90%, 0.5),
+        -0.25em -0.125em 0.125em hsla(40, 100%, 60%, 0.2),
+        0.25em 0.125em 0.125em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    70% {
+      color: hsl(230, 80%, 90%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.5),
+        0 0 0.125em hsla(320, 100%, 60%, 0.5),
+        0.5em -0.125em 0.25em hsla(40, 100%, 60%, 0.2),
+        -0.5em 0.125em 0.25em hsla(200, 100%, 60%, 0.4);
+    }
+    
+    100% {
+      color: hsl(230, 40%, 80%);
+      text-shadow:
+        0 0 1em hsla(320, 100%, 50%, 0.2),
+        0 0 0.125em hsla(320, 100%, 60%, 0.3),
+        1em -0.125em 0.5em hsla(40, 100%, 60%, 0),
+        -1em 0.125em 0.5em hsla(200, 100%, 60%, 0);
+    }
+    
+  }
+
+  @keyframes animate {
+    from {
+      filter: hue-rotate(0deg);
+    }
+    to {
+      filter: hue-rotate(360deg);
+    }
+  }
+
+  
