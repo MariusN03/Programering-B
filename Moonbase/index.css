@@ -20,7 +20,7 @@
 }
 
 .animation {
-    animation: vader 5s ease;
+    animation: vader 19s linear;
 }
 
 body{
