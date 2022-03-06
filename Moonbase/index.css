@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+    font-family: "spacefont";
+    src: url("./assets/EdgeOfTheGalaxyRegular-OVEa6.otf");
+}
+
 *{
     /* box-sizing: border-box; */
     margin: 0;
@@ -5,6 +12,29 @@
     overflow: hidden;
     font: 100% / 1.5 Raleway, sans-serif;
 }
+
+#informer {
+    font-family: "spacefont";
+    color: white;
+    position: absolute;
+    transition: 1s all ease-in-out;
+    width: 30vw;
+    height: 45vh;
+    top: 20vh;
+    left: 34%;
+    /* border: solid white 1rem; */
+    border-radius: 50px;
+    background: linear-gradient(90deg, rgba(29, 206, 250, 0.678) 0%, rgba(96, 165, 255, 0.644) 100%);
+    padding: 1rem;
+    font-size: 200%;
+    opacity: 0%;
+}
+
+#infoChild {
+    opacity: 65%;
+}
+
+
 
 #vader {
     height: 45vh;
@@ -183,5 +213,3 @@ main {
     from { transform: translateX(0px); }
     to { transform: translateX(100vw); }
   }
-
-  
