@@ -8,7 +8,11 @@
     font-family: 'Open Sans';
 }
 
-#arrows-front{
+ul {
+    margin-left: 1vw;
+}
+
+/* #arrows-front{
     overflow: hidden;
 
     height: 100vh;
@@ -19,7 +23,35 @@
     left: 0;
     background-color: black;
     opacity: 10%;
+} */
+
+.guide-arrows-top {
+    position: absolute;
+    font-size: 80px;
+    font-weight: bolder;
+    color: red;
+    top: 18vh;
+    z-index: 100;
+    pointer-events: none;
 }
+
+#arrows {
+    opacity: 100;
+}
+
+#arrow1 {
+    left: 10vw;
+}
+#arrow2 {
+    left: 35vw;
+}
+#arrow3 {
+    left: 60vw;
+}
+#arrow4 {
+    left: 85vw;
+}
+
 
 header {
     background:#78aed3;
@@ -132,9 +164,16 @@ a {
 
 
 #page2 {
-    background-color: aquamarine;
+    background-color: whitesmoke;
     height: 70vh;
     width: 100vw;
+    display: grid;
+    place-items: center;
+}
+
+#p2_1 {
+    padding: 2vh 10vw 2vh 10vw;
+    
 }
 
 #page3 {
@@ -147,7 +186,7 @@ a {
 }
 
 #p3_1 {
-    padding: 10vh 10vw 0 10vw;
+    padding: 2vh 10vw 2vh 10vw;
     place-items: center;
 }
 
@@ -157,20 +196,22 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     place-items: center;
-    padding: 0 10vw 0 10vw;
+    padding: 0 5vw 10vw 5vw;
+    gap: 1rem;
 }
 
 .kendetegn{
     background: #8cc5eb;
     border-bottom-left-radius: 10vh;
     border-top-right-radius: 10vh;
-    height: 20vw;
-    width: 20vw;
+    height: 28vw;
+    width: 28vw;
+    padding: 1rem;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
 #page4 {
-    background-color: sienna;
+    background-color: whitesmoke;
     height: 70vh;
     width: 100vw;
 }
